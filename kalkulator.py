@@ -3,18 +3,17 @@ import logging
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(message)s')
 print("Witaj, ten oto mini-kalkulator wykona wybrane przez Ciebie działanie na dwóch elementach.")
 dzialanie = int(print(input("Podaj działanie, posługując się odpowiednią liczbą: 1 Dodawanie, 2 Odejmowanie, 3 Mnożenie, 4 Dzielenie:\n")))
-el_1 = int(print((input("podaj pierwszy element")))
-el_2 = int(print((input("podaj drugi element")))
-    
-def kalk(dzialanie, el_1, el_2):
+el1 = int(print(input("Podaj pierwszy element działania")))
+el2 = int(print(input("Podaj drugi element działania")))
+def kalk(dzialanie, el1, el2):
     if dzialanie == '1':
-        return(el_1 + el_2)
-    if dzialanie == 2:
-        return(el_1 - el_2)
-    if dzialanie == 3:
-        return(el_1 * el_2)
-    if dzialanie == 4:
-        return(el_1 / el_2)
+        return(el1 + el2)
+    if dzialanie == '2':
+        return(el1 - el2)
+    if dzialanie == '3':
+        return(el1 * el2)
+    if dzialanie == '4':
+        return(el1 / el2)
 
 if __name__ == "__main__":
     if len(sys.argv) < 4:
